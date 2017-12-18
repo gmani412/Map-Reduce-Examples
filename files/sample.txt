@@ -1,0 +1,6 @@
+Hello this is the sample test file created for wordcount job
+cat rat mat bat dog tree
+mat bat dog dog cat
+cat dog ball tree mat
+ball bat dog cat mat tree rat
+apple mango cat rat bat mat tree dog

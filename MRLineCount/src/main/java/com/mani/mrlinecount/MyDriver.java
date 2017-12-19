@@ -1,4 +1,4 @@
-package com.mani.mrwordcount;
+package com.mani.mrlinecount;
 
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
@@ -11,7 +11,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /**
  * To run this program you can execute the below command ----------------------
- * hadoop jar MRWordCount-*.jar com.mani.mrwordcount.MyDriver
+ * hadoop jar MRLineCount-*.jar com.mani.mrlinecount.MyDriver
  * /tmp/mani/sample.txt /tmp/op
  *
  *
@@ -19,13 +19,6 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
  */
 public class MyDriver {
 
-    /**
-     *
-     * @param args
-     * @throws IOException
-     * @throws InterruptedException
-     * @throws ClassNotFoundException
-     */
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
         if (args == null || args.length == 0 || args.length < 1
                 || args[0] == null || args[0].isEmpty()
@@ -34,7 +27,7 @@ public class MyDriver {
             System.exit(0);
         }
         Configuration conf = new Configuration();
-        Job job = Job.getInstance(conf, "Word Count");
+        Job job = Job.getInstance(conf, "Line Count");
         job.setJarByClass(MyDriver.class);
         job.setMapperClass(MyMapper.class);
         /**

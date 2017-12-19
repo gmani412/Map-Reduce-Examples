@@ -1,6 +1,7 @@
 /MRWordCount/target/
 /MRWordLength/target/
 /MRCharacterCount/target/
+/MRLineCount/target/
 /MRLineLength/target/
 /MRMaxLengthWord/target/
 /MRMinLengthWord/target/
